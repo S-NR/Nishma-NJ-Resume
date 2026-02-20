@@ -121,7 +121,7 @@ def say_hello():
     button1.config(text="CAREER", command=career)
     button2.config(text="SKILLS", command=tech_skills)
     button3.config(text="EDUCATION", command=education)
-    button4.config(text="SKILLS", command=tech_skills)
+    button4.config(text="PROJECTS", command=career)  # TODO: Implement projects section
     button5.config(text="LinkedIn", command=open_browser)
     button6.config(text="CONTACT", command=contact)
 
@@ -231,7 +231,46 @@ def education():
 
 def career():
     reset_ui()
-    label.config(text="My career....")
+    label.config(text="My career....", font=("Arial", 18, "bold"))
+    
+    for widget in table_frame.winfo_children():
+        widget.destroy()
+
+    data = [
+        ("Position", "Company", "Duration", "Key Achievements"),
+        ("Firmware Engineer", "Company A", "2016 - 2020", "Embedded Linux, RTOS Development"),
+        ("Senior Firmware Engineer", "Company B", "2020 - Present", "Team Lead, Architecture Design"),
+    ]
+
+    headers = data[0]
+    header_fonts = ("Arial", 12, "bold")
+
+    for j, title in enumerate(headers):
+        tk.Label(
+            table_frame,
+            text=title,
+            font=header_fonts,
+            fg="blue",
+            anchor="w",
+            justify="left",
+        ).grid(row=0, column=j, padx=10, pady=8, sticky="w")
+
+    for i, row in enumerate(data[1:], start=1):
+        for j, val in enumerate(row):
+            font = FONT_BOLD if j in (0, 2) else FONT_NORMAL
+            tk.Label(
+                table_frame,
+                text=val,
+                font=font,
+                anchor="w",
+                justify="left",
+                wraplength=150
+            ).grid(row=i, column=j, padx=10, pady=5, sticky="w")
+
+    for col in range(4):
+        table_frame.grid_columnconfigure(col, weight=1)
+
+    table_frame.pack(pady=20, fill="x")
     button1.config(text="BACK", command=say_hello)
     button1.pack(pady=10)
 

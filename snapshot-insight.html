@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snapshot Insight | Nishma N J</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LinkedIn Embed Script -->
+<script src="https://platform.linkedin.com/in.js" charset="utf-8"></script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f5f7fa;
+        color: #2c3e50;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #007BFF;
+        color: #007BFF;
+    }
+
+    .post {
+        margin-bottom: 30px;
+        padding: 25px;
+        background: #f9fafb;
+        border-left: 4px solid #007BFF;
+        border-radius: 6px;
+    }
+
+    .post h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    .post .date {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .post p {
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .post-link {
+        display: inline-block;
+        margin-top: 5px;
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .post-link:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #e7f3ff;
+        color: #007BFF;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-right: 8px;
+        margin-top: 12px;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+        background: #0056b3;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: #999;
+    }
+
+    .empty-state p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .content-grid {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .column {
+        padding: 25px;
+        background: #f9fafb;
+        border-radius: 8px;
+        border: 2px solid #e7f3ff;
+    }
+
+    .column h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #007BFF;
+        color: #007BFF;
+    }
+
+    .column-content {
+        min-height: 400px;
+    }
+
+    .linkedin-embed {
+        margin-bottom: 25px;
+        padding: 15px;
+        background: white;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .embed-instructions {
+        padding: 20px;
+        background: #e7f3ff;
+        border-radius: 6px;
+        border-left: 4px solid #007BFF;
+        margin-bottom: 20px;
+        font-size: 13px;
+        color: #0056b3;
+        line-height: 1.6;
+    }
+
+    .embed-instructions strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px;
+            margin: 20px;
+        }
+
+        .post {
+            padding: 20px;
+        }
+
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>📸 Snapshot Insight</h1>
+        <p>Technical Articles, Insights & Learning from the Field</p>
+    </div>
+
+    <h2>Posts</h2>
+
+    <div class="content-grid">
+        
+        <!-- <div class="column">
+            <h3>💼 LinkedIn Posts</h3>
+            <div class="column-content">
+                <p style="text-align: center; color: #999; padding: 40px 20px;">
+                    Follow my latest insights and technical articles on <a href="https://www.linkedin.com/in/nishma-nj/recent-activity/all/" target="_blank" style="color: #007BFF; text-decoration: none;">LinkedIn</a>
+                </p>
+                <div style="margin-bottom: 20px;">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7430229232649269249?collapsed=1" height="628" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://www.linkedin.com/posts/nishma-n-j-108b52186_stm32-embeddedsystems-microcontrollers-ugcPost-7430229232649269249-iumB?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvzxxgBCofH3ub2aQ65Dt8PBznzd8AZqhc" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="column"> -->
+            <h3>📸 My Insights</h3>
+            <div class="column-content">
+                <div style="margin-bottom: 20px;">
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/STM%20Board%20recovery/STM%20board%20recovery.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/STM%20Board%20recovery/STM%20board%20recovery.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/USB_Complience_testinghtml%20-%20Copy.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/USB_Complience_testinghtml%20-%20Copy.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/variable_mem_details.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/variable_mem_details.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/clocks_&_ocillators.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/clocks_&_ocillators.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/code_development_statergies.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/code_development_statergies.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/double_buffering.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/double_buffering.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/mtbf.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/mtbf.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/watch_dog_timer.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/watch_dog_timer.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/clock_skew_linux.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/clock_skew_linux.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/gpio_types_and_config.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/gpio_types_and_config.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+                <div>
+                    <iframe src="https://s-nr.github.io/SnapShotInsight/optimization_tips.html" style="width: 100%; height: 200px; border: none; border-radius: 6px;"></iframe>
+                    <p style="text-align: right; margin-top: 5px;">
+                        <a href="https://s-nr.github.io/SnapShotInsight/optimization_tips.html" target="_blank" class="post-link">View Full Article →</a>
+                    </p>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </div>
+
+    <!-- Post template for Insights column:
+    <div class="post">
+        <h3>Post Title</h3>
+        <p class="date">Published Date</p>
+        <p>Post content summary or full content.</p>
+        <div>
+            <span class="tag">Tag1</span>
+            <span class="tag">Tag2</span>
+        </div>
+    </div>
+    -->
+
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+    <div class="footer">
+        © 2026 Nishma N J | Snapshot Insight - Technical Learning & Insights
+    </div>
+
+</div>
+
+</body>
+</html>

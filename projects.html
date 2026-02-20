@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Nishma N J</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f5f7fa;
+        color: #2c3e50;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #007BFF;
+        color: #007BFF;
+    }
+
+    .project {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f9fafb;
+        border-left: 4px solid #007BFF;
+        border-radius: 6px;
+    }
+
+    .project h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    .project .duration {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .project p {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .project ul {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .project ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .skills-tag {
+        display: inline-block;
+        background: #e7f3ff;
+        color: #007BFF;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .nav-button, .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+        margin-right: 10px;
+    }
+
+    .nav-button:hover, .back-button:hover {
+        background: #0056b3;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        font-size: 14px;
+        color: #888;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px;
+            margin: 20px;
+        }
+
+        .project {
+            padding: 15px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Projects & Portfolio</h1>
+        <p>Showcase of Firmware Engineering Projects</p>
+    </div>
+
+    <h2>Featured Projects</h2>
+
+    <div class="project">
+        <h3>Ultrasonic Flow Sensor - Fluid & Gas Flow Meter</h3>
+        <p class="duration">Tismo Technology Solutions - 2019 - Present</p>
+        <p>Collaborated on development and maintenance of an ultrasonic transducer-based flow meter capable of measuring fluid and gas flow with high precision. Worked in partnership with client, sharing code changes and improvements across both teams.</p>
+        <ul>
+            <li>Designed and implemented UI improvements using EasyGUI frameworks</li>
+            <li>Resolved critical SD card reconnection issue affecting data logging reliability</li>
+            <li>Fixed MODBUS timeout issues when ASCII selection was enabled</li>
+            <li>Identified and fixed MODBUS stack bugs improving protocol compliance</li>
+            <li>Resolved double precision value handling using long long type conversions for accurate flow calculations</li>
+            <li>Fixed RTC time comparison inconsistency during continuous logging operations</li>
+            <li>Resolved display flickering and pixel rendering issues with new controller support</li>
+            <li>Optimized code to resolve memory overflow issues</li>
+            <li>Proposed innovative solutions and fixes for issues client couldn't resolve</li>
+            <li>Maintained collaborative code sharing and integration with client development team</li>
+        </ul>
+        <div>
+            <span class="skills-tag">Ultrasonic Technology</span>
+            <span class="skills-tag">TouchGFX</span>
+            <span class="skills-tag">EasyGUI</span>
+            <span class="skills-tag">MODBUS Protocol</span>
+            <span class="skills-tag">PIC 32</span>
+            <span class="skills-tag">Data Logging</span>
+            <span class="skills-tag">Problem Solving</span>
+            <span class="skills-tag">Client Collaboration</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Medical Laser Treatment System - Skin, Eye & Derma</h3>
+        <p class="duration">Tismo Technology Solutions - 2021 - 2023</p>
+        <p>Developed and delivered a comprehensive medical laser treatment application supporting skin, eye, and dermatology treatments. Took ownership of critical product quality improvements and bug resolution.</p>
+        <ul>
+            <li>Designed and implemented UI with integration to main application using TouchGFX and EasyGUI frameworks</li>
+            <li>Conducted comprehensive regressive testing of all laser treatment features</li>
+            <li>Fixed critical issues left unresolved by previous engineer after resignation</li>
+            <li>Identified and resolved complex bugs affecting treatment accuracy and safety</li>
+            <li>Delivered final product with zero known bugs ready for production</li>
+            <li>Ensured compliance and reliability for medical device requirements</li>
+        </ul>
+        <div>
+            <span class="skills-tag">TouchGFX</span>
+            <span class="skills-tag">EasyGUI</span>
+            <span class="skills-tag">STM Controller</span>
+            <span class="skills-tag">Medical Device</span>
+            <span class="skills-tag">Regressive Testing</span>
+            <span class="skills-tag">UI Integration</span>
+            <span class="skills-tag">Quality Assurance</span>
+            <span class="skills-tag">Problem Ownership</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Cypress Controller - Medical Endoscopy Device (HW/FW Update & Compatibility)</h3>
+        <p class="duration">Tismo Technology Solutions - 2020 - 2022</p>
+        <p>Updated and stabilized an existing Cypress-based medical endoscopy controller (previously on PIC32) to ensure HW/FW compatibility, reliability under thermal stress, and correct user interactions in clinical environments.</p>
+        <ul>
+            <li>Fixed HW/FW compatibility issue caused by hardware revision voltage comparison that led to device freezes during error conditions</li>
+            <li>Implemented thermal threshold checks for components that fail above 65°C to prevent failures in high-temperature environments</li>
+            <li>Modified button behavior: adjusted hold times for snapshot and video actions to meet clinical workflow requirements</li>
+            <li>Addressed USB compliance support (see initiatives) and worked around limited JTAG support by using boot-mode programming to recover and load firmware</li>
+            <li>Performed regression testing and validated fixes to ensure system stability in surgical environments</li>
+        </ul>
+        <div>
+            <span class="skills-tag">Cypress</span>
+            <span class="skills-tag">HW/FW Compatibility</span>
+            <span class="skills-tag">Thermal Protection</span>
+            <span class="skills-tag">USB Compliance</span>
+            <span class="skills-tag">Boot-Mode Recovery</span>
+            <span class="skills-tag">Endoscopy</span>
+            <span class="skills-tag">Medical Device</span>
+            <span class="skills-tag">Regressive Testing</span>
+        </div>
+    </div>
+    
+    <div class="project">
+        <h3>Dongle Passkey Security - Time-based Key Validation Fix</h3>
+        <p class="duration">Tismo Technology Solutions - 2022</p>
+        <p>Investigated and fixed passkey validation failures in a dongle-based passkey system where keys generated within time frames were intermittently invalid.</p>
+        <ul>
+            <li>Analyzed time-frame based key generation and identified timing/windowing issues causing validation mismatches</li>
+            <li>Modified random key generation and time-sync logic to ensure deterministic validation across devices</li>
+            <li>Introduced tolerance windows and robust time-check algorithms to handle clock drift</li>
+            <li>Implemented improved entropy and RNG approach for passkey generation</li>
+            <li>Validated fixes with extensive interoperability tests across host and dongle firmware versions</li>
+        </ul>
+        <div>
+            <span class="skills-tag">Security</span>
+            <span class="skills-tag">RNG</span>
+            <span class="skills-tag">Time-based Keys</span>
+            <span class="skills-tag">Dongle</span>
+            <span class="skills-tag">Interoperability Testing</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Linux-based Flow Meter - BeagleBone Socket/File MODBUS Integration</h3>
+        <p class="duration">Tismo Technology Solutions - 2018 - 2020</p>
+        <p>Device communication uses sockets and file updates happen using BeagleBone. MODBUS register read operation reads from a file on the BeagleBone; write updates the device via socket communication and writes back the latest updates to the file from which MODBUS read happens.</p>
+        <ul>
+            <li>MODBUS register update failed due to file corruption during socket communication (timeouts or packet drops when multiple commands were processed) — introduced mutexes and semaphores to fix it.</li>
+            <li>Multiple variable update issue when using multiple binaries was resolved by implementing atomic update strategies.</li>
+            <li>Crash fix: concurrent write and read on the same file caused crashes; implemented write-to-temp-and-rename, file-locking, and serialized access to prevent corruption.</li>
+        </ul>
+        <div>
+            <span class="skills-tag">BeagleBone</span>
+            <span class="skills-tag">Linux</span>
+            <span class="skills-tag">Sockets</span>
+            <span class="skills-tag">MODBUS</span>
+            <span class="skills-tag">Concurrency</span>
+            <span class="skills-tag">Mutex/Semaphore</span>
+            <span class="skills-tag">File I/O</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Instrumentation - pH & ORP Meter</h3>
+        <p class="duration">Tismo Technology Solutions - 2022 - 2023</p>
+        <p>Developed firmware and measurement algorithms for a precision pH and ORP instrumentation project, including calibration routines and long-term stability improvements.</p>
+        <ul>
+            <li>Implemented algorithms to compute pH and ORP from sensor readings with high accuracy</li>
+            <li>Developed 2-point and 4-point calibration techniques to ensure measurement linearity across ranges</li>
+            <li>Achieved accuracy and stability of 0.1 pH over extended runtime through filtering and drift compensation</li>
+            <li>Added CLI support for diagnostics and calibration over Docklight serial interface</li>
+            <li>Validated performance with long-run tests and provided tooling for field calibration</li>
+        </ul>
+        <div>
+            <span class="skills-tag">pH</span>
+            <span class="skills-tag">ORP</span>
+            <span class="skills-tag">Calibration</span>
+            <span class="skills-tag">Docklight</span>
+            <span class="skills-tag">CLI</span>
+            <span class="skills-tag">Instrumentation</span>
+            <span class="skills-tag">Accuracy & Stability</span>
+        </div>
+    </div>
+
+    <!-- <div class="project">
+        <h3>Touch GFX User Interface Development</h3>
+        <p class="duration">Tismo Technology Solutions - Jan 2023 - Present</p>
+        <p>Designed and implemented intuitive user interfaces using TouchGFX framework for embedded devices with graphical displays.</p>
+        <ul>
+            <li>Created responsive UI layouts for ARM Cortex-M microcontrollers</li>
+            <li>Integrated hardware interfaces with UI components</li>
+            <li>Optimized graphics performance on resource-constrained devices</li>
+        </ul>
+        <div>
+            <span class="skills-tag">TouchGFX</span>
+            <span class="skills-tag">ARM Cortex-M</span>
+            <span class="skills-tag">Embedded Systems</span>
+            <span class="skills-tag">UI/UX Design</span>
+        </div>
+    </div> -->
+
+    <!-- <div class="project">
+        <h3>Peripheral Validation Framework</h3>
+        <p class="duration">Rays Technologies - Jun 2017 - Oct 2019</p>
+        <p>Developed comprehensive validation suite for embedded device peripherals including communication protocols and sensors.</p>
+        <ul>
+            <li>Validated I2C, SPI, UART, and RTT protocols</li>
+            <li>Created automated test scripts and validation reports</li>
+            <li>Identified and documented hardware and software issues</li>
+        </ul>
+        <div>
+            <span class="skills-tag">I2C</span>
+            <span class="skills-tag">SPI</span>
+            <span class="skills-tag">UART</span>
+            <span class="skills-tag">Testing</span>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>RTOS-based Firmware Development</h3>
+        <p class="duration">Tismo Technology Solutions - Oct 2019 - Jan 2023</p>
+        <p>Architected and implemented real-time operating system solutions for complex embedded applications.</p>
+        <ul>
+            <li>Designed multi-threaded firmware using FreeRTOS</li>
+            <li>Implemented task scheduling and inter-process communication</li>
+            <li>Optimized memory and CPU utilization</li>
+        </ul>
+        <div>
+            <span class="skills-tag">FreeRTOS</span>
+            <span class="skills-tag">C</span>
+            <span class="skills-tag">RTOS</span>
+            <span class="skills-tag">Bare Metal</span>
+        </div>
+    </div> -->
+
+    <div class="project">
+        <h3>HDL/Verilog Educational Labs</h3>
+        <p class="duration">Diploma College Kushlanagar - Jan 2016 - Jul 2016</p>
+        <p>Developed and conducted practical lab sessions on hardware description languages and digital design.</p>
+        <ul>
+            <li>Designed and simulated digital circuits using Verilog</li>
+            <li>Implemented complex FPGA designs</li>
+            <li>Mentored students in HDL programming and AEC labs</li>
+        </ul>
+        <div>
+            <span class="skills-tag">Verilog</span>
+            <span class="skills-tag">VHDL</span>
+            <span class="skills-tag">FPGA</span>
+            <span class="skills-tag">Digital Design</span>
+        </div>
+    </div>
+
+    <a href="New%20Text%20Document.html" class="back-button">← Back to Resume</a>
+
+    <div class="footer">
+        © 2026 Nishma N J | Firmware Engineer & Embedded Systems Developer
+    </div>
+
+</div>
+
+</body>
+</html>
