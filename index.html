@@ -33,8 +33,7 @@
     max-width: 900px;
     margin: 60px auto;
     padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;   /* VERY IMPORTANT */
 }
 
     .header {
@@ -89,8 +88,7 @@
 
     table {
         width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
+        table-layout: fixed;
     }
 
     th {
