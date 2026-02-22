@@ -159,9 +159,22 @@ td {
 
 @media (max-width: 768px) {
 
+    body {
+        padding: 20px;   /* This creates equal spacing on BOTH sides */
+        background: #f5f7fa;
+    }
+
     .container {
-        margin: 20px;
+        margin: 0;       /* remove container margin */
         padding: 25px;
+        border-radius: 12px;
+    }
+
+    .nav-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
     }
 
     .header h1 {
@@ -175,13 +188,6 @@ td {
 
     h2 {
         font-size: 18px;
-    }
-
-    .nav-button {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
     }
 
     table {
